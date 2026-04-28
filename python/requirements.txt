@@ -1,0 +1,4 @@
+requests>=2.31
+hnswlib>=0.7.0
+numpy>=1.24
+python-dotenv>=1.0

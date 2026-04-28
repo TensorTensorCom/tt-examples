@@ -1,0 +1,21 @@
+{
+  "name": "tensortensor-examples-typescript",
+  "private": true,
+  "version": "0.1.0",
+  "description": "TypeScript examples for the TensorTensor build API.",
+  "scripts": {
+    "01": "ts-node 01-generate-index.ts",
+    "02": "ts-node 02-use-index.ts",
+    "03": "ts-node 03-end-to-end.ts"
+  },
+  "dependencies": {
+    "axios": "^1.7.0",
+    "dotenv": "^16.4.0",
+    "hnswlib-node": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "ts-node": "^10.9.0",
+    "typescript": "^5.4.0"
+  }
+}
