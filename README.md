@@ -26,6 +26,9 @@ All examples read configuration from a `.env` file in their respective folder. C
 TT_API_URL=https://api.tensortensor.com
 TT_API_KEY=key-xxxxxxxxxxxx
 TT_VECTORS_URL=https://your.cdn/sample_vectors.bin
+# Quick test option: a 1k x 768d sample file is available at
+# https://raw.githubusercontent.com/TensorTensorCom/examples/main/data/sample-1k-768d.bin
+# (Set TT_DIMENSIONS=768 if you use it.)
 TT_DIMENSIONS=768
 TT_EMAIL=you@example.com
 ```
