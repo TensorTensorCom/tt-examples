@@ -1,4 +1,4 @@
-# TensorTensor Examples
+# GPU Accelerated HNSWLib Indexes
 
 Working examples of integrating with the TensorTensor build API.
 

@@ -1,4 +1,4 @@
-# TensorTensor — Python Examples
+# TensorTensor - Python Examples
 
 ## Setup
 
@@ -21,9 +21,9 @@ python 03_end_to_end.py
 
 ## Files
 
-- `01_generate_index.py` — POSTs to `/api/v1/build` with your API key, prints the returned `jobId` and `status`.
-- `02_use_index.py` — downloads an HNSW file from `TT_DOWNLOAD_URL` (or fetches via `TT_JOB_ID`), loads it with `hnswlib`, generates a random query vector matching `TT_DIMENSIONS`, runs k-NN top-5, prints results.
-- `03_end_to_end.py` — submits a job, polls `GET /api/v1/build/:jobId` every 60 minutes (configurable in code) until `status: complete`, then downloads + loads + searches.
+- `01_generate_index.py` - POSTs to `/api/v1/build` with your API key, prints the returned `jobId` and `status`.
+- `02_use_index.py` - downloads an HNSW file from `TT_DOWNLOAD_URL` (or fetches via `TT_JOB_ID`), loads it with `hnswlib`, generates a random query vector matching `TT_DIMENSIONS`, runs k-NN top-5, prints results.
+- `03_end_to_end.py` - submits a job, polls `GET /api/v1/build/:jobId` every 60 minutes (configurable in code) until `status: complete`, then downloads + loads + searches.
 
 ## Notes
 
