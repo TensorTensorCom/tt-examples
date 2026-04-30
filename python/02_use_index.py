@@ -35,7 +35,7 @@ def main():
 
         res = requests.get(
             f'{api_url}/api/v1/build/{job_id}',
-            headers={'Authorization': f'Basic {api_key}'},
+            headers={'X-TensorTensor-API-Key': api_key},
         )
         res.raise_for_status()
         data = res.json().get('data')

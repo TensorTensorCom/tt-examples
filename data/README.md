@@ -36,7 +36,7 @@ Submit it like any other vectors file:
 
 ```bash
 curl -X POST https://api.tensortensor.com/api/v1/build \
-  -H "Authorization: Basic key-xxxxxxxxxxxx" \
+  -H "X-TensorTensor-API-Key: key-xxxxxxxxxxxx" \
   -H "Content-Type: application/json" \
   -d '{
     "email": "you@example.com",

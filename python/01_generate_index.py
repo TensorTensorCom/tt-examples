@@ -35,7 +35,7 @@ def main():
     assert_env()
 
     headers = {
-        'Authorization': f'Basic {api_key}',
+        'X-TensorTensor-API-Key': api_key,
         'Content-Type': 'application/json',
     }
     payload = {

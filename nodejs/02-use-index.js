@@ -30,7 +30,7 @@ let   downloadUrl = process.env.TT_DOWNLOAD_URL;
     }
 
     const res = await axios.get(`${apiUrl}/api/v1/build/${jobId}`, {
-      headers: { Authorization: `Basic ${apiKey}` },
+      headers: { 'X-TensorTensor-API-Key': apiKey },
     });
 
     const result = res.data.data?.[0];

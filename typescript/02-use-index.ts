@@ -41,7 +41,7 @@ async function main(): Promise<void> {
     }
 
     const res = await axios.get<JobResponse>(`${apiUrl}/api/v1/build/${jobId}`, {
-      headers: { Authorization: `Basic ${apiKey}` },
+      headers: { 'X-TensorTensor-API-Key': apiKey },
     });
 
     const result = res.data.data?.[0];

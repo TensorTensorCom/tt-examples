@@ -37,6 +37,6 @@ TT_EMAIL=you@example.com
 
 ## Authentication
 
-Examples send your API key in the `Authorization: Basic <TT_API_KEY>` header.
+Examples send your API key in the `X-TensorTensor-API-Key: <TT_API_KEY>` header.
 
 If you do not have an API key yet, request one at https://app.tensortensor.com.

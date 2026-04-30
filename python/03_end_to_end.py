@@ -25,10 +25,10 @@ email       = os.getenv('TT_EMAIL')
 # Polling interval. Builds typically take minutes-to-hours depending on
 # vector count. 60 minutes is a sensible default; for small test sets,
 # drop this to 60 (1 minute) or 30.
-POLL_INTERVAL_S = 60 * 60
-MAX_POLLS       = 24
+POLL_INTERVAL_S = 10
+MAX_POLLS       = 360
 
-headers = {'Authorization': f'Basic {api_key}'}
+headers = {'X-TensorTensor-API-Key': api_key}
 
 
 def submit():

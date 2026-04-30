@@ -36,7 +36,7 @@ function assertEnv(){
 
   const res = await axios.post(`${apiUrl}/api/v1/build`,
     { email, vectorsUrl, dimensions },
-    { headers: { Authorization: `Basic ${apiKey}`, 'Content-Type': 'application/json' } },
+    { headers: { 'X-TensorTensor-API-Key': apiKey, 'Content-Type': 'application/json' } },
   );
 
   const { jobId, status } = res.data.data;

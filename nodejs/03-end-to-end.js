@@ -21,10 +21,10 @@ const email      = process.env.TT_EMAIL;
 // Polling interval. Builds typically take minutes-to-hours depending on
 // vector count. 60 minutes is a sensible default; for small test sets,
 // drop this to 60_000 (1 minute) or 30_000 (30s).
-const POLL_INTERVAL_MS = 60 * 60 * 1000;
-const MAX_POLLS        = 24;
+const POLL_INTERVAL_MS = 10 * 1000;
+const MAX_POLLS        = 360;
 
-const headers = { Authorization: `Basic ${apiKey}` };
+const headers = { 'X-TensorTensor-API-Key': apiKey };
 
 async function submit(){
 
